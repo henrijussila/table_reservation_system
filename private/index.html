@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apollo</title>
+    <link rel="stylesheet" href="/styles.css">
+    <style>
+        /* Additional styling for the toggle switch */
+    </style>
+</head>
+
+<body>
+    <h1>Apollo Reservations</h1>
+    <h5>By Mehu Coding</h5>
+    <div id="userContainer">
+        <p id="userDetails"></p>
+        
+    </div>
+    <button id="logoutButton" onclick="logout()">Logout</button>
+
+    <!-- Toggle Switch -->
+    <div>
+        <label>
+            <input type="radio" name="formType" value="table" checked> Table Reservation
+        </label>
+        <label>
+            <input type="radio" name="formType" value="list"> Quest List
+        </label>
+    </div>
+
+    <!-- Table Reservation Form -->
+    <div id="tableForm" class="form-container active">
+        <form id="reservationForm" action="/submit" method="post">
+            <div>
+                <label for="date">Choose a date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div>
+                <label for="table">Choose a table:</label>
+                <select id="table" name="table" required>
+                    <option value="">Select a date first</option>
+                </select>
+            </div>
+            <div>
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" name="firstname" required>
+            </div>
+            <div>
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname" name="lastname" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div>
+                <label for="people">Number of People:</label>
+                <input type="number" id="people" name="people" required>
+            </div>
+            <div>
+                <label for="notes">Additional Notes:</label>
+                <textarea id="notes" name="notes" rows="4"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="reservationsContainer">
+            <!-- Reservations will be displayed here -->
+        </div>
+
+
+        <div class="downloadContainer">
+            <h2>Download Reservations as PDF</h2>
+            <button id="downloadButton" onclick="downloadReservations()" disabled>Download Reservations</button>
+        </div>
+    </div>
+
+    <!-- Quest List Form -->
+    <div id="questListForm" class="form-container">
+        <form id="questListFormId" method="post">
+            <div>
+                <label for="questListDate">Choose a date:</label>
+                <input type="date" id="questListDate" name="questListDate">
+            </div>
+            <div>
+                <label for="listFirstname">First Name:</label>
+                <input type="text" id="listFirstname" name="firstname" required>
+            </div>
+            <div>
+                <label for="listLastname">Last Name:</label>
+                <input type="text" id="listLastname" name="lastname" required>
+            </div>
+            <div>
+                <label for="listPeople">Number of People:</label>
+                <input type="number" id="listPeople" name="people" required>
+            </div>
+            <div>
+                <label for="listNotes">Additional Notes:</label>
+                <textarea id="listNotes" name="notes" rows="4"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="questlistContainer">
+            <!-- Reservations will be displayed here -->
+        </div>
+
+
+        <div class="downloadContainer">
+            <h2>Download Quest List as PDF</h2>
+            <button id="listDownloadButton" onclick="downloadQuestList()" disabled>Download Quest List</button>
+        </div>
+    </div>
+
+
+
+    <script src="/main.js"></script>
+</body>
+
+</html>

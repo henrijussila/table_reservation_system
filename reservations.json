@@ -1,0 +1,82 @@
+[
+  {
+    "date": "2024-06-21",
+    "table": "A1",
+    "firstname": "Henri",
+    "lastname": "Jussila",
+    "email": "henri.jussila@noho.fi",
+    "phone": "0400465336",
+    "people": "6",
+    "notes": "Jallua"
+  },
+  {
+    "date": "2024-08-08",
+    "table": "A1",
+    "firstname": "Henri",
+    "lastname": "Jussila",
+    "email": "henri.jussila@noho.fi",
+    "phone": "0400465336",
+    "people": "5",
+    "notes": "Vodka"
+  },
+  {
+    "date": "2024-08-27",
+    "table": "A1",
+    "firstname": "Henri",
+    "lastname": "Jussila",
+    "email": "henri.jussila@noho.fi",
+    "phone": "0400465336",
+    "people": "43",
+    "notes": "Vettä"
+  },
+  {
+    "date": "2024-09-12",
+    "table": "A4",
+    "firstname": "Henri",
+    "lastname": "Jussila",
+    "email": "henu.jussila@gmail.com",
+    "phone": "0400465336",
+    "people": "4",
+    "notes": "Vodkaa"
+  },
+  {
+    "date": "2024-09-29",
+    "table": "A2",
+    "firstname": "Henri",
+    "lastname": "Jussila",
+    "email": "henu.jussila@gmail.com",
+    "phone": "0400465336",
+    "people": "12",
+    "notes": "dsad"
+  },
+  {
+    "date": "2024-09-30",
+    "table": "A1",
+    "firstname": "Henri",
+    "lastname": "Jussila",
+    "email": "henri.jussila@noho.fi",
+    "phone": "0400465336",
+    "people": "32",
+    "notes": "ads"
+  },
+  {
+    "date": "2024-09-30",
+    "table": "A2",
+    "firstname": "Henri",
+    "lastname": "Jussila",
+    "email": "henri.jussila@noho.fi",
+    "phone": "0400465336",
+    "people": "2",
+    "notes": "dasda"
+  },
+  {
+    "date": "2024-09-30",
+    "table": "A4",
+    "firstname": "Pekka",
+    "lastname": "Kakka",
+    "email": "pekka.jukka@gmail.com",
+    "phone": "424334234",
+    "people": "2",
+    "notes": "Vodka"
+  }
+]
