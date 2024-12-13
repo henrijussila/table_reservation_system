@@ -1,7 +1,7 @@
 # table_reservation_system
 Practice project that mocks internal table reservation system for nightclubs.
 
-Run the project using node app.js and open browser on localhost:3000. Use either of the credentials found from users.json
+Run the project using node app.js and open browser on localhost:3000. Use the credentials in users.json
 
 Things on the TODO-list:
 -Two way encryption when transfering data (Crytpo/Crypto-js)
