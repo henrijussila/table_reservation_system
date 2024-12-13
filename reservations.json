@@ -78,5 +78,15 @@
     "phone": "424334234",
     "people": "2",
     "notes": "Vodka"
+  },
+  {
+    "date": "2024-12-13",
+    "table": "A1",
+    "firstname": "Guy",
+    "lastname": "Person",
+    "email": "guy.person@gmail.com",
+    "phone": "0401234567",
+    "people": "2",
+    "notes": "VIP-access"
   }
 ]

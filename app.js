@@ -24,8 +24,8 @@ app.use(session({
     secret: 'yourSecretKey', // TODO: Replace with a strong, secret key
     resave: false, // Don't save session if unmodified
     saveUninitialized: false, // Don't create session until something is stored
-    cookie: { secure: false, httpOnly: true, maxAge: 1000 * 20 } // 20-second expiry
-    //cookie: { secure: false, httpOnly: true, maxAge: 1000 * 60 * 60 } // 1-hour expiry
+    //cookie: { secure: false, httpOnly: true, maxAge: 1000 * 20 } // 20-second expiry
+    cookie: { secure: false, httpOnly: true, maxAge: 1000 * 60 * 60 } // 1-hour expiry
 }));
 
 // Middleware to parse the body of the request
