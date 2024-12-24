@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const path = require('path');
 const fs = require('fs');
+const { decrypt } = require('../utils/crypto');
 
 // Path to the users JSON file
 const usersFilePath = path.join(__dirname, '../users.json');
@@ -20,6 +21,17 @@ router.get('/', (req, res) => {
 router.post('/login', (req, res) => {
     const { email, password } = req.body;
 
+    console.log("Back: ", req.body);
+
+     // Encrypt the credentials
+     const decrypted = {
+        email: decrypt(email, 'your-very-secure-key').toString(),
+        password: decrypt(password, 'your-very-secure-key').toString()
+    };
+
+    console.log("Back decrypted: ", decrypted);
+
+
     // Read the users JSON file
     fs.readFile(usersFilePath, 'utf8', (err, data) => {
         if (err) {
@@ -29,7 +41,7 @@ router.post('/login', (req, res) => {
 
         const users = JSON.parse(data);
         // Check if the user exists
-        const user = users.find(user => user.email === email);
+        const user = users.find(user => user.email === decrypted.email);
 
         if (!user) {
             // User not found
@@ -37,7 +49,7 @@ router.post('/login', (req, res) => {
         }
 
         // Check if the password matches
-        if (user.password !== password) {
+        if (user.password !== decrypted.password) {
             // Incorrect password
             return res.status(401).json({ success: false, message: 'Invalid password' });
         }

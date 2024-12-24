@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "cookie-parser": "^1.4.6",
+    "crypto-js": "^4.2.0",
     "express": "^4.19.2",
     "express-session": "^1.18.0",
     "pdfkit": "^0.15.0"

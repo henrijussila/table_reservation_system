@@ -39,7 +39,7 @@ app.use('/', loginRoutes);
 function isAuthenticated(req, res, next) {
     if (req.session && req.session.user) {
         // User is authenticated, proceed to the next middleware or route
-        console.log('Session is: ', req.session);
+        //console.log('Session is: ', req.session);
         return next();
     } else {
         // User is not authenticated, redirect to the login page
